@@ -1,0 +1,228 @@
+/* CSS Variables */
+:root {
+    --primary-color: #ffd31d;
+    --primary-color-hover: #d1a700;
+    --secondary-color: #844685;
+    --secondary-color-hover: #10375c;
+    --light-color: #faf4ff;
+}
+
+body {
+    font-family: 'PT Sans', sans-serif;
+    background-color: #fff;
+    margin: 0;
+    color: #fff;
+    line-height: 1.6;
+}
+
+a  {
+    text-decoration: none;
+    color: rgb(63, 63, 63);
+}
+
+nav {
+    height: 150px;
+    width: 100%;
+    background-color: var(--primary-color);
+    color: rgb(26, 26, 26);
+    position: fixed; /* nav fixed on the top */
+    margin: 0 auto;
+    z-index: 1;
+    box-shadow: 0px -2px 5px 3px rgba(0,0,0,0.75);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+}
+
+.icons-navbar {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(1100%, 60%);
+}
+
+.icons-navbar:hover {
+    left: -2px;
+    top: -2px;
+}
+
+nav li {
+    display: inline;
+    float: left;
+}
+
+nav a {
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 0;
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 580px) {
+    .hide-on-small {
+        display: none;
+    }
+    #showcase {
+        height: 50vh;
+    }
+    #showcase .container {
+        margin-top: 15vh;
+    }
+    #showcase h1 {
+        font-size: 3rem;
+    }
+    #showcase h2 {
+        font-size: 1.5rem;
+    }
+    nav {
+        height: auto;
+        border-bottom: 0;
+    }
+    nav ul {
+        display: none;
+        height: auto;
+    }
+    nav li {
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    nav a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background: #333;
+        border-bottom: 1px solid #555;
+    }
+    nav a:hover {
+        background: #444;
+    }
+    nav a#openup:after {
+        content: "|||";
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        /* IE 9 */
+        -webkit-transform: rotate(-90deg);
+        /* Safari and Chrome */
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+    }
+    nav a#openup {
+        display: block;
+        background-color: #333;
+        width: 100%;
+        position: relative;
+    }
+    .gift-card-img {
+        display: none;
+    }
+}
+
+#openup {
+    margin: 15px 30px;
+}
+
+.navbar-items {
+    position: relative;
+}
+
+.cf:before, .cf:after {
+    content: "";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    zoom: 1;
+    align-items: center;
+}
+
+.container {
+    max-width: 1180px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.section {
+    padding: 2rem 0;
+}
+
+@keyframes slider {
+    /*0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -350%;
+    }
+    45% {
+        left: -350%;
+    }
+    50% {
+        left: -500%;
+    }
+    70% {
+        left: -500%;
+    }
+    75% {
+        left: -750%;
+    }
+    95% {
+        left: -750%;
+    }
+    100% {
+        left: -900%;
+    }*/
+    0% {
+        left: 20;
+    }
+    25% {
+        left: 50%;
+    }
+    50% {
+        left: -50%;
+    }
+    100% {
+        left: 0;
+    }
+}
+
+#slider {
+    overflow: hidden;
+}
+
+#slider .photos img {
+    width: 200%;
+    float: left;
+}
+
+#slider .photos {
+    position: relative;
+    margin: 0;
+    left: 0;
+    animation: 20s slider infinite;
+}
+
+.inline {
+    display: flex;
+    justify-content:space-around;
+}
+
+.inline > div {
+    margin-right: 100px;
+}
