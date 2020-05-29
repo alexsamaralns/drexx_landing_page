@@ -186,14 +186,14 @@ img{
 	display: inline-block;
 	float: left;
 	margin: 0;
-	padding: 0;
+    padding: 0;
 }
 .image{
 	width: 2800px;
 	height: 400px
 }
 
-/*BUTTON PLAY&STOP*/
+/*BUTTON PLAY&STOP
 
 .butPlay{
 	position: absolute;
@@ -243,9 +243,9 @@ img{
 	z-index: 5;
 	vertical-align: middle;
 	font-weight: bolder;
-}
+}*/
 
-/*BOTTOM LINE*/
+/*BOTTOM LINE
 
 .line{
 	display: block;
@@ -296,10 +296,11 @@ img{
 	border-color: transparent transparent #2DAA8D transparent ;
 	border-width: 8px 8px 12px 8px;
 	margin: -20px 0 0 77px;
-}
+}*/
 
-/*INPUT CHECKED*/
+/*INPUT CHECKED */
 
+/*
 #play:checked ~ .cont .line{
 	-webkit-animation: linew 16s linear infinite;
 	-moz-animation: linew 16s linear infinite;
@@ -307,20 +308,26 @@ img{
 	-o-animation: linew 16s linear infinite;
 	animation: linew 16s linear infinite;
 }
+*/
+
 #play:checked ~ .cont .image{
-	-webkit-animation: alls 16s linear infinite;
-	-moz-animation: alls 16s linear infinite;
-	-ms-animation: alls 16s linear infinite;
-	-o-animation: alls 16s linear infinite;
-	animation: alls 16s linear infinite;
+	-webkit-animation: alls 45s linear infinite;
+	-moz-animation: alls 45s linear infinite;
+	-ms-animation: alls 45s linear infinite;
+	-o-animation: alls 45s linear infinite;
+	animation: alls 45s linear infinite;
 }
+
+/*
 #play:checked ~ .cont .but .tooltip{
-	-webkit-animation: tooltip 16s linear infinite;
-	-moz-animation: tooltip 16s linear infinite;
-	-ms-animation: tooltip 16s linear infinite;
-	-o-animation: tooltip 16s linear infinite;
-	animation: tooltip 16s linear infinite;
+	-webkit-animation: tooltip 60s linear infinite;
+	-moz-animation: tooltip 60s linear infinite;
+	-ms-animation: tooltip 60s linear infinite;
+	-o-animation: tooltip 60s linear infinite;
+	animation: tooltip 60s linear infinite;
 }
+*/
+
 #play:checked ~ .cont .butPlay{
 	display: none;
 }
@@ -337,6 +344,7 @@ img{
 
 /*ANIMATION*/
 
+/*
 @-webkit-keyframes linew{
 	0%{width: 0px;}
 	25%{width: 186px;}
@@ -344,6 +352,8 @@ img{
 	75%{width: 534px;}
 	100%{width: 714px;}
 }
+*/
+
 @-webkit-keyframes alls{
 	0%{margin-left: 0px;}
 	23%{margin-left: 0px;-webkit-filter: blur(0px);}
@@ -359,6 +369,8 @@ img{
 	99%{-webkit-filter: blur(10px);}
 	100%{margin-left: 0px;-webkit-filter: blur(0px);}
 }
+
+/*
 @-webkit-keyframes tooltip{
 	0%{margin-left: 77px;}
 	23%{margin-left: 77px;}
@@ -370,7 +382,9 @@ img{
 	98%{margin-left: 604px;}
 	100%{margin-left: 77px;}
 }
+*/
 
+/*
 @keyframes linew{
 	0%{width: 0px;}
 	25%{width: 186px;}
@@ -378,8 +392,10 @@ img{
 	75%{width: 534px;}
 	100%{width: 714px;}
 }
+*/
+
 @keyframes alls{
-	0%{margin-left: 0px;}
+	/*0%{margin-left: 0px;}
 	23%{margin-left: 0px;}
 	25%{margin-left:-700px; }
 	48%{margin-left: -700px;}
@@ -387,8 +403,13 @@ img{
 	73%{margin-left: -1400px;}
 	75%{margin-left: -2100px;}
 	98%{margin-left: -2100px;}
-	100%{margin-left: 0px;}
+    100%{margin-left: 0px;}*/
+    0%{margin-left: 0px;}
+    50%{margin-left: -2100px;}
+    100%{margin-left: 0px;}
 }
+
+/*
 @keyframes tooltip{
 	0%{margin-left: 77px;}
 	23%{margin-left: 77px;}
@@ -400,17 +421,17 @@ img{
 	98%{margin-left: 604px;}
 	100%{margin-left: 77px;}
 }
+*/
 
-
-.image, .tooltip{-webkit-transition: all 500ms cubic-bezier(0.350, 0.080, 0.905, 0.460); 
+.image {-webkit-transition: all 500ms cubic-bezier(0.350, 0.080, 0.905, 0.460); 
    -moz-transition: all 500ms cubic-bezier(0.350, 0.080, 0.905, 0.460); 
     -ms-transition: all 500ms cubic-bezier(0.350, 0.080, 0.905, 0.460); 
      -o-transition: all 500ms cubic-bezier(0.350, 0.080, 0.905, 0.460); 
-        transition: all 500ms cubic-bezier(0.350, 0.080, 0.905, 0.460); /* custom */
+        transition: all 500ms cubic-bezier(0.350, 0.080, 0.905, 0.460);
 
     -webkit-transition-timing-function: cubic-bezier(0.350, 0.080, 0.905, 0.460); 
     -moz-transition-timing-function: cubic-bezier(0.350, 0.080, 0.905, 0.460); 
         -ms-transition-timing-function: cubic-bezier(0.350, 0.080, 0.905, 0.460); 
         -o-transition-timing-function: cubic-bezier(0.350, 0.080, 0.905, 0.460); 
-            transition-timing-function: cubic-bezier(0.350, 0.080, 0.905, 0.460); /* custom */
+            transition-timing-function: cubic-bezier(0.350, 0.080, 0.905, 0.460);
 }
