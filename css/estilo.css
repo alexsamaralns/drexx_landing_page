@@ -58,8 +58,6 @@ body {
 .icons-navbar:hover {
     background-color: var(--primary-color-hover);
     border-radius: 10px;
-    height: 70px;
-    width: 70px;
 }
 
 .icons-navbar {
