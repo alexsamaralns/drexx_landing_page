@@ -46,7 +46,7 @@ body {
 }
 
 .nav-items {
-    margin-right: 20px;
+    margin-right: calc(100vw - 1420px);
 }
 
 .options {
@@ -256,11 +256,11 @@ body {
 }
 
 
-/* Smartphone */
-@media screen and (max-width: 380px) {
+/* Smartphone
+@media screen and (max-width: 400px) {
     .cabecalho {
         margin-bottom: 50px;
-        width: 101vw;
+        width: 100%;
     }
 
     .logo {
@@ -375,13 +375,44 @@ body {
     .img-store {
         display: none;
     }
-}
+}*/
+
+@media screen and (max-width: 550px) {
+    .cf > li {
+        display:inline-block;
+    }
+
+    .cf > li:nth-child(4) {
+        margin-left: 16px;
+    }
+
+    .icons-navbar {
+        width: 30px;
+        height: 30px;
+    }
+}   
+
+@media screen and (max-width: 735px) {
+    .icons-navbar {
+        width: 30px;
+        height: 30px;
+    }
+
+}   
+
+@media screen and (max-width: 1395px) {
+    .nav-items {
+        margin-top: 10px;
+        margin-right: 80px
+    }
+
+} 
 
 /* Tablet */
-@media screen and (max-width: 1260px) {
+@media screen and (max-width: 1299px) {
     .cabecalho {
         margin-bottom: 50px;
-        width: 101vw;
+        width: 100%;
     }
 
     .logo {
@@ -401,23 +432,23 @@ body {
     }
 
     .nav-items {
-        display: block;
         margin-top: 10px;
-        margin-right: 30px;
-    }
-
-    .icons-navbar {
-        width: 30px;
-        height: 30px;
+        margin-right: 80px
     }
 
     .w3-right, .w3-left {
         display: none;
     }
 
+    .img-carosel {
+        width: 100%;
+        margin-left: 50px;
+        margin-top: 20px;
+    }
+
     .w3-content, .w3-section {
         padding-top: 20px;
-        width: 90vw;
+        width: 100%;
     }
 
     .img-carosel {
@@ -445,23 +476,24 @@ body {
     }
 
     .img-e-commerce > img {
-        max-width: 100%;
+        max-width: 90%;
         height: auto;
         padding-bottom: 100px;
+        padding-right: 70px;
     }
 
     .buy-options {
-        width: 100vw;
+        width: 100%;
         height: 1250px;
     }
 
     .buy-style {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        justify-content: space-around;
-        padding: 50px;
+        justify-content: center;
     }
 
     .varejo, .atacado, .atacarejo {
@@ -470,7 +502,6 @@ body {
         border-radius: 5%;
         margin-bottom: 50px;
         margin-left: 20px;
-        margin-right: 20px;
     }
 
     .varejo > h2, .atacado > h2, .atacarejo > h2 {
