@@ -1,7 +1,7 @@
 <header class="cabecalho">
     <div class="logo">
         <div class="logo-text">
-            <a href='#' id='openup'><img class="logo" src="img/drexx2.png" alt=""></a>
+            <a href='#' id='openup'><img class="img-logo" src="img/drexx2.png" alt=""></a>
         </div>
         <div class="logo-text">
             <p class="logo-text">

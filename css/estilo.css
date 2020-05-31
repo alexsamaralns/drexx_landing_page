@@ -31,7 +31,7 @@ body {
     box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.75); /* cssmatic.com */
 }
 
-.logo {
+.img-logo {
     margin-top: 10px;
     margin-left: 12px;
 }
@@ -70,12 +70,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: -320px;
-}
-
-@media screen and (max-width: 580px) {
-    .cabecalho {
-        margin-bottom: 50px;
-    }
 }    
 
 .mySlides {
@@ -101,8 +95,8 @@ body {
 }
 
 .intro {
-    padding: 100px;
-    margin-top: -100px;
+    padding: 50px 100px 100px 50px;
+    margin-top: -60px;
     z-index: 1;
     text-align: center;
     background-color: var(--secondary-color);
@@ -152,12 +146,29 @@ body {
 }
 
 .varejo, .atacado, .atacarejo {
+    position: relative;
     height: 500px;
     width: 400px;
     background-color: var(--primary-color);  
     border-radius: 5%;  
     z-index: 1;
     box-shadow: 14px 14px 3px -7px rgba(7,31,53,1);
+}
+
+.varejo {
+    display: block;
+    justify-content: space-between;
+}
+
+.atacarejo-icon {
+    margin-bottom: 10px;
+}
+
+.varejo-icon, .atacado-icon, .atacarejo-icon {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(0%);
 }
 
 .varejo > h2, .atacado > h2, .atacarejo > h2 {
@@ -175,14 +186,6 @@ body {
     padding-left: 30px;
     padding-right: 30px;
     font-family: 'Varela', sans-serif;
-}
-
-.atacarejo-icon {
-    margin-top: 60px;
-}
-
-.varejo-icon {
-    margin-top: 20px;
 }
 
 .container {
@@ -249,4 +252,238 @@ body {
 .footer-bottom > img {
     width: 60px;
     height: 40px;
+}
+
+
+/* Smartphone */
+@media screen and (max-width: 780px) {
+    .cabecalho {
+        margin-bottom: 50px;
+        width: 101vw;
+    }
+
+    .logo {
+        display: block;
+        margin-top: 13px;
+    }
+
+    .img-logo {
+        width: 165px;
+        height: 27px;
+        margin-left: 17px;
+    }
+
+    .logo-text > p{
+        font-size: 10px;
+        text-align: left;
+    }
+
+    .nav-items {
+        margin-top: 10px;
+    }
+
+    .icons-navbar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cf > li {
+        display:inline-block;
+    }
+
+    .cf > li:nth-child(4) {
+        margin-left: 16px;
+    }
+
+    .w3-right, .w3-left {
+        display: none;
+    }
+
+    .w3-content, .w3-section {
+        padding-top: 20px;
+        width: 90vw;
+    }
+
+    .img-carosel {
+        width: 100vw;
+    }
+
+    .intro {
+        width: 100vw;
+        height: 895px;
+    }
+
+    .intro > p {
+        font-size: 18px;
+        font-weight: 200;
+    }
+
+    .intro > img {
+        width: 50%;
+        height: 15%;
+    }
+
+    .e-commerce {
+        width: 100vw;
+        height: 650px;
+    }
+
+    .e-commerce > img {
+        width: 90%;
+        height: 70%;
+    }
+
+    .buy-options {
+        width: 100vw;
+        height: 1250px;
+    }
+
+    .buy-style {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px;
+    }
+
+    .varejo, .atacado, .atacarejo {
+        height: 350px;
+        width: 400px;  
+        border-radius: 5%;
+        margin-bottom: 50px;
+    }
+
+    .varejo > h2, .atacado > h2, .atacarejo > h2 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    
+    .varejo > p, .atacado > p, .atacarejo > p {
+        font-size: 14px;
+        font-weight: 700;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .rodape {
+        display: none;
+    }
+}
+
+/* Tablet */
+
+@media screen and (max-width: 780px) {
+    .cabecalho {
+        margin-bottom: 50px;
+        width: 101vw;
+    }
+
+    .logo {
+        display: block;
+        margin-top: 13px;
+    }
+
+    .img-logo {
+        width: 165px;
+        height: 27px;
+        margin-left: 17px;
+    }
+
+    .logo-text > p{
+        font-size: 10px;
+        text-align: left;
+    }
+
+    .nav-items {
+        margin-top: 10px;
+    }
+
+    .icons-navbar {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cf > li {
+        display:inline-block;
+    }
+
+    .cf > li:nth-child(4) {
+        margin-left: 16px;
+    }
+
+    .w3-right, .w3-left {
+        display: none;
+    }
+
+    .w3-content, .w3-section {
+        padding-top: 20px;
+        width: 90vw;
+    }
+
+    .img-carosel {
+        width: 100vw;
+    }
+
+    .intro {
+        width: 100vw;
+        height: 895px;
+    }
+
+    .intro > p {
+        font-size: 18px;
+        font-weight: 200;
+    }
+
+    .intro > img {
+        width: 50%;
+        height: 15%;
+    }
+
+    .e-commerce {
+        width: 100vw;
+        height: 650px;
+    }
+
+    .e-commerce > img {
+        width: 90%;
+        height: 70%;
+    }
+
+    .buy-options {
+        width: 100vw;
+        height: 1250px;
+    }
+
+    .buy-style {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-around;
+        padding: 50px;
+    }
+
+    .varejo, .atacado, .atacarejo {
+        height: 350px;
+        width: 400px;  
+        border-radius: 5%;
+        margin-bottom: 50px;
+    }
+
+    .varejo > h2, .atacado > h2, .atacarejo > h2 {
+        font-size: 28px;
+        font-weight: 700;
+    }
+    
+    .varejo > p, .atacado > p, .atacarejo > p {
+        font-size: 14px;
+        font-weight: 700;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .rodape {
+        display: none;
+    }
 }
