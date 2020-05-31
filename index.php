@@ -40,7 +40,9 @@
     </section>
 
     <section class="e-commerce">
-        <img src="https://lh3.googleusercontent.com/pw/ACtC-3fet9Uk83FePUFYNooiT8Y9eDTKbk5jnDNo4x83rr6w2qcOYs5Otli5skDK1yEyy89yUrT9Ra38ccHoB_jRqPq6uf0sRMmMq9X_23HZLVLDNzeGi3BMjshjyEosG2x3DbiLeu29fa8NNSuJsiHG8PIl=s748-no?authuser=0">
+        <div class="img-e-commerce">
+            <img src="https://lh3.googleusercontent.com/pw/ACtC-3fet9Uk83FePUFYNooiT8Y9eDTKbk5jnDNo4x83rr6w2qcOYs5Otli5skDK1yEyy89yUrT9Ra38ccHoB_jRqPq6uf0sRMmMq9X_23HZLVLDNzeGi3BMjshjyEosG2x3DbiLeu29fa8NNSuJsiHG8PIl=s748-no?authuser=0">
+        </div>
     </section>
 
     <section class="buy-options">
