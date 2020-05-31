@@ -5,7 +5,7 @@
         </div>
         <div class="logo-text">
             <p class="logo-text">
-                Calçados e acessórios femininos, masculinos e infantis com os melhores preços.
+                Calçados e acessórios femininos, masculinos e infantis com os melhores preços
             </p>
         </div>
     </div>
