@@ -63,10 +63,9 @@ body {
 
       .itens > a {
         display: block;
-        margin-left: 15px;
       }
 
-      .itens > a:hover {
+      .mob-menu > a:hover {
         position: relative;
         left: -3px;
         top: -3px;
@@ -84,6 +83,19 @@ body {
 
         .links {
           transition: 0.8s;
+        }
+
+        .mob-menu {
+          display: flex;
+          flex-direction: row;
+        }
+
+        .mob-menu > a {
+          margin-left: 15px;
+        }
+
+        .mob-menu > p {
+          display: none;
         }
 
   /* Menu responsivo, tags adicionadas pelo JavaScript */
@@ -432,9 +444,9 @@ body {
     }
 
     .cf {
-      margin-top: 228px;
-      margin-right: -20px;
-      width: 100%;
+      margin-top: 235px;
+      margin-right: -23px;
+      width: 250px;
       display: none;
     }
 
@@ -458,7 +470,7 @@ body {
         width: 45px;
       }
 
-      .itens > a:hover {
+      .mob-menu > a:hover {
         position: relative;
         left: 0px;
         top: 0px;
@@ -466,10 +478,19 @@ body {
 
       .itens:hover {
         background-color: var(--primary-color-hover);
+        cursor: pointer;
       }
 
       .links {
         float: none;
+      }
+
+      .mob-menu > p {
+        display: flex;
+        flex-direction: row;
+        margin-left: 20px;
+        padding-top: 15px;
+        font-weight: 700;
       }
 
   .nav-mobile {

@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <?php require_once 'includes/head.php'; ?>
+
+</head>
+<body>
+    
 <header>
     <nav class="nav-bar">
         <div class="left">
@@ -42,4 +51,7 @@
             </div>
         </div>
     </nav>
-</header>
+</header>    
+
+</body>
+</html>
