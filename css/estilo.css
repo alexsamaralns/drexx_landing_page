@@ -78,7 +78,7 @@ body {
         padding-right: 20px;
       }
 
-        .links:hover {ne
+        .links:hover {
           cursor: pointer;
         }
 
@@ -411,77 +411,6 @@ body {
 }
 
 @media (max-width: 927px) {
-  /*.nav-mobile {
-    display: flex;
-    left: 50%;
-    height: 35px;
-    width: 40px;
-    z-index: 10;
-    border: 2px solid black;
-  }
-
-  .nav-bar {
-    height: 50px;
-    z-index: 3;
-  }
-
-  .logo-text {
-    display: none;
-  }
-
-  .img-logo {
-    height: 16px;
-    width: 80px;
-  }
-
-  .cf {
-    width: 100%;
-    display:none;
-  }
-
-  .links {
-    width: 100%;
-    display: table;
-    background-color: var(--primary-color);
-    float: none;
-    margin: -24px 200px -10px 0;
-    border-top: 1px solid var(--primary-color-hover);
-  }
-
-  li:first-child {
-    border-top: none;
-    margin-bottom: 5px;
-  }
-
-  li:hover {
-    background-color: var(--primary-color-hover);
-  }
-
-  .right {
-    margin-right: 0;
-    margin-top: 252px;
-    right: 0;
-    z-index: 5;
-  }
-
-  .icons-navbar {
-    height: 50px;
-    width: 50px;
-    padding: 10px;
-  }
-
-  .links:hover {
-    cursor: pointer;
-    padding: 0;
-    background-color: none;
-    border-radius: 0;
-  }
-
-  li:hover {
-    cursor: pointer;
-    background-color: var(--primary-color-hover);
-  }*/
-
   .nav-bar {
     height: 50px;
     z-index: 3;
@@ -549,6 +478,15 @@ body {
 
   .controls {
     display: none;
+  }
+
+  .home .indicator > div {
+    width: 35px;
+    height: 35px;
+    font-size: 16pt;
+    line-height: 30px;
+    font-weight: 700;
+    margin-left: 20px;
   }
 
   .slider {
